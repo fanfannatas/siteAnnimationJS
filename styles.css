@@ -1,0 +1,210 @@
+body {
+    padding-top: 100px;
+    font-family: "Archivo Black", sans-serif;
+    background: #070909;
+    color: crimson;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+.logo{
+    border:black solid 10px;
+    border-radius: 70%;
+    height: 150px;
+    float:left;
+    margin-left: -250px;
+    margin-top: 100px;
+}
+.title{
+    margin-top: 150px;
+    color: #20c7f1;
+    text-align: right;
+}
+.by{
+color: #20c7f1;
+}
+.field-container{
+    color: #20c7f1;
+}
+.bio{
+    width: 800px;
+    color: blueviolet;
+}
+/*debut du code de l annimation  */
+.words {
+    color: #21f6e0;
+    font-size: 0;
+    line-height: 1.5;
+}
+
+.words span {
+    font-size: 5rem;
+    display: inline-block;
+    animation: move 3s ease-in-out infinite;
+}
+
+@keyframes move {
+    0% {
+    transform: translate(-30%, 0);
+    }
+    50% {
+    text-shadow: 0 50px 50px rgba(16, 240, 23, 0.85);
+    }
+    100% {
+    transform: translate(30%, 0);
+    }
+}
+
+.words span:nth-child(2) {
+    animation-delay: 0.5s;
+}
+
+.words span:nth-child(3) {
+    animation-delay: 1s;
+}
+
+.words span:nth-child(4) {
+    animation-delay: 1.5s;
+}
+
+.words span:nth-child(5) {
+    animation-delay: 2s;
+}
+
+.words span:nth-child(6) {
+    animation-delay: 2.5s;
+}
+
+.words span:nth-child(7) {
+    animation-delay: 3s;
+}
+/*fin du code annimation */
+
+.footer{
+    background:transparent;
+    color:violet;
+    display: flex;
+    flex-direction: row;
+}
+.breadcrumb{
+    margin-left: -500px;
+    padding-left: 10px;
+}
+
+/*début annimation de creation*/
+.h1{
+    color: #20c7f1;
+    font-size: 50px;
+    font-weight: bold;
+    font-family: monospace;
+    letter-spacing: 7px;
+    cursor: pointer
+}
+.span{
+    transition: .5s linear
+}
+h1:hover span:nth-child(1){
+    margin-right: 5px
+}
+h1:hover span:nth-child(1):after{
+    content: "'";
+}
+h1:hover span:nth-child(2){
+    margin-left: 30px
+}
+h1:hover span{
+    color: #fff;
+    text-shadow: 0 0 10px #fff,
+                0 0 20px #fff, 
+                0 0 40px #fff;
+}
+/*fin d annime creation*/
+canvas{
+    background-color: #21f6e0;
+    color:blue;
+    border:solid yellow 10px;
+    
+}
+/* css du canvas balle*/
+/* fin css de balle*/
+/* backend du canvas balle*/
+@import url("https://fonts.googleapis.com/css2?family=Titan+One&display=swap");
+.wrapper {
+  width: 100vw;
+  text-align: center;
+}
+.wrapper span {
+  -webkit-text-stroke-width: 1.25px;
+  -webkit-text-stroke-color: #000;
+  font-size: 100px;
+  text-shadow: 0 0px #f3c623, 0 0px #f2aaaa;
+  transform: translate(0, 100%) rotate(4deg);
+  animation: jump 2s ease-in-out infinite;
+  display: inline-block;
+  font-family: "Titan One", cursive;
+  color: #fff;
+}
+.wrapper span:nth-child(1) {
+  animation-delay: 120ms;
+}
+.wrapper span:nth-child(2) {
+  animation-delay: 240ms;
+}
+.wrapper span:nth-child(3) {
+  animation-delay: 360ms;
+}
+.wrapper span:nth-child(4) {
+  animation-delay: 480ms;
+}
+.wrapper span:nth-child(5) {
+  animation-delay: 600ms;
+}
+.wrapper span:nth-child(6) {
+  animation-delay: 720ms;
+}
+.wrapper span:nth-child(7) {
+  animation-delay: 840ms;
+}
+
+@keyframes jump {
+  33% {
+    text-shadow: 0 60px #f37121, 0 150px #f2aaaa;
+  }
+  50% {
+    transform: translate(0, 0) rotate(-4deg);
+    text-shadow: 0 0px #8fc0a9, 0 0px #84a9ac;
+  }
+  66.67% {
+    text-shadow: 0 -60px #d54062, 0 -150px #8fc0a9;
+  }
+}
+html {
+  width: 100%;
+  height: 100vh;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100vh;
+  box-sizing: border-box;
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+  background: #000;
+}
+
+@media screen and (max-height: 200px) {
+  .wrapper {
+    transform: scale(0.3, 0.3);
+  }
+}
+@media screen and (max-width: 576px) {
+  .wrapper span {
+    font-size: 50px;
+  }
+}
+/* fin backend de balle*/

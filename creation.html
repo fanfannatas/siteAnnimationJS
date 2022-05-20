@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/png" href="images\logoBlue.png" />
+    <title>créations</title>
+</head>
+<body>
+    <header class="headTitle">
+        <h1>essaye ça! => what you see is what you get</h1>
+        
+    </header>
+    <fieldset>
+        <legend class="by"><h1>à toi de jouer!</h1></legend>
+        <div class="field-container">
+            <label>Titre</label>
+            <input class="onChangeRefreshWysiwyg" type="text" id="titreWysiwyg"/>
+
+            <label>Couleur du titre</label>
+            <input type="text" class="onChangeRefreshWysiwyg" id="colorTitleWysiwyg" />
+
+            <label>Taille du titre</label>
+            <input type="number" class="onChangeRefreshWysiwyg" id="tailleTitleWysiwyg" value="21"/>
+        </div>
+        <div class="field-container">
+            <label>Source de l'image</label>
+            <input class="onChangeRefreshWysiwyg" type="text" id="imgWysiwyg"/>
+
+            <label>Largeur max</label>
+            <input value="300" class="onChangeRefreshWysiwyg" type="range" min="15" max="1000" id="imgMaxWidthWysiwyg"/>
+        </div>
+        <div class="field-container">
+            <label>Contenu</label>
+            <textarea class="onChangeRefreshWysiwyg" type="text" id="contentWysiwyg"></textarea>
+        </div>
+
+        <div class="field-container">
+            <button id="btnGenererWysiwyg">Générer</button>
+        </div>
+    </fieldset>
+
+    <div id="resultatWysiwyg">
+        <h2 id="titreWysiwygResultat"></h2>
+        <img src="" id="imgWysiwygResultat" />
+        <p id="contentWysiwygResultat"></p>
+    </div>
+    <section>
+        <h1><span>I</span>M<span>POSSIBLE</span></h1>
+    </section>
+    <footer>
+        <button> <a href="index.html"> retour</a></button>
+        <p class="by">@créate by fanfannatas!</p>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
+
