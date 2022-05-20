@@ -5,7 +5,6 @@ body {
     color: crimson;
     display: flex;
     flex-direction: column;
-    height: 100vh;
     justify-content: center;
     align-items: center;
 }
@@ -121,15 +120,8 @@ h1:hover span{
                 0 0 40px #fff;
 }
 /*fin d annime creation*/
-canvas{
-    background-color: #21f6e0;
-    color:blue;
-    border:solid yellow 10px;
-    
-}
-/* css du canvas balle*/
-/* fin css de balle*/
-/* backend du canvas balle*/
+
+/* backend du qui saute*/
 @import url("https://fonts.googleapis.com/css2?family=Titan+One&display=swap");
 .wrapper {
   width: 100vw;
@@ -180,22 +172,6 @@ canvas{
     text-shadow: 0 -60px #d54062, 0 -150px #8fc0a9;
   }
 }
-html {
-  width: 100%;
-  height: 100vh;
-}
-
-body {
-  margin: 0;
-  padding: 0;
-  width: 100%;
-  height: 100vh;
-  box-sizing: border-box;
-  display: grid;
-  place-items: center;
-  overflow: hidden;
-  background: #000;
-}
 
 @media screen and (max-height: 200px) {
   .wrapper {
@@ -207,4 +183,4 @@ body {
     font-size: 50px;
   }
 }
-/* fin backend de balle*/
+/* fin backend qui saute*/
